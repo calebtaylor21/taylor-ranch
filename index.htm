@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="common\css\styles-min.css">
   <script src="common\js\jquery-3.7.1.min.js"></script>
   <script src="common\js\scripts.js"></script>
+  <script src="common\js\aos.js"></script>
   <style>
     @keyframes iconBoing{
       0%{
@@ -91,10 +92,10 @@
       </div>
 
       <div class="grid ta-center">
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-out">
           <img src="common/img/fallow-doe-duo.jpg" alt="fallow does standing broadside">
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-out" data-aos-delay="250">
           <h3>Our Animals</h3>
           <p>Taylor Ranch offers a variety of animals to hunt, as well as stands for bow and rifle hunters. Click here to check out the exotic species that we have to offer.</p>
           <a href="hunt/index.htm" class="secondary-cta-btn">
@@ -104,14 +105,14 @@
       </div>
 
       <div class="grid ta-center">
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-out" data-aos-delay="250">
           <h3>The Lodge</h3>
           <p>Taylor Ranch offers a variety of animals to hunt, as well as stands for bow and rifle hunters. Click here to check out the exotic species that we have to offer.</p>
           <a href="#" class="secondary-cta-btn">
             <label>The Lodge</label>
           </a>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-out">
           <img src="common/img/lodge-front.jpg" alt="front corner of Taylor Ranch lodge">
         </div>
       </div>
@@ -171,5 +172,14 @@
     </div>
   </div>
 </footer>
+
+<script>
+  <script>
+		AOS.init();
+		window.addEventListener('load', function() {
+			AOS.refresh();
+		});
+	</script>
+</script>
 </body>
 </html>
